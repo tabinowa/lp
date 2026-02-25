@@ -111,7 +111,7 @@
     <section class="section" id="why" aria-labelledby="whyTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 共感セクション（Why）</p>
+          <!-- <p class="eyebrow">🟣 共感セクション（Why）</p> -->
           <h2 id="whyTitle">こんな思いを、心のどこかで抱えていませんか？</h2>
         </header>
 
@@ -141,7 +141,7 @@
     <section class="section section--alt" id="benefits" aria-labelledby="benefitsTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 たびのわでできること</p>
+          <!-- <p class="eyebrow">🟣 たびのわでできること</p> -->
           <h2 id="benefitsTitle">たびのわ の ３つの特徴</h2>
         </header>
 
@@ -177,7 +177,7 @@
     <section class="section" id="activities" aria-labelledby="actTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 活動内容</p>
+          <!-- <p class="eyebrow">🟣 活動内容</p> -->
           <h2 id="actTitle">オンラインもリアルも。ちょうどいい距離感。</h2>
         </header>
 
@@ -185,7 +185,7 @@
           <article class="card">
             <h3>🌐 オンライン交流（Discord）</h3>
             <ul class="bullets">
-              <li>旅行相談</li>
+              <li>旅行相談（海外・国内・世界一周航空券・マイル）</li>
               <li>おすすめスポット共有</li>
               <li>雑談・報告</li>
               <li>情報交換</li>
@@ -196,7 +196,7 @@
             <h3>🤝 オフ会</h3>
             <ul class="bullets">
               <li>日帰りランチ会</li>
-              <li>テーマ別ミニ交流会</li>
+              <li>子連れ参加OKオフ会</li>
             </ul>
           </article>
 
@@ -223,7 +223,7 @@
     <section class="section section--alt" id="voices" aria-labelledby="voicesTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 みんなの声</p>
+          <!-- <p class="eyebrow">🟣 みんなの声</p> -->
           <h2 id="voicesTitle">参加者の声</h2>
         </header>
 
@@ -256,7 +256,7 @@
     <section class="section" id="pricing" aria-labelledby="priceTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 料金</p>
+          <!-- <p class="eyebrow">🟣 料金</p> -->
           <h2 id="priceTitle">入会金0円。月690円。縛りなし。</h2>
         </header>
 
@@ -295,39 +295,59 @@
     <section class="section section--alt" id="faq" aria-labelledby="faqTitle">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow">🟣 FAQ</p>
           <h2 id="faqTitle">よくある質問</h2>
         </header>
-
         <div class="faq">
-          <details class="faq__item">
-            <summary>Q. 初心者でも大丈夫？</summary>
-            <p>もちろん。旅のレベルは問いません。</p>
-          </details>
+          <div class="faq-item">
+            <button class="faq-question">
+              初心者でも大丈夫？
+              <span class="faq-icon">＋</span>
+            </button>
+            <div class="faq-answer">
+              <p>もちろん。旅のレベルは問いません。</p>
+            </div>
+          </div>
 
-          <details class="faq__item">
-            <summary>Q. 子どもの年齢が違っても役立ちますか？</summary>
-            <p>年齢別の体験談が豊富なので参考になります。</p>
-          </details>
+          <div class="faq-item">
+            <button class="faq-question">
+              子どもの年齢が違っても役立ちますか？
+              <span class="faq-icon">＋</span>
+            </button>
+            <div class="faq-answer">
+              <p>年齢別の体験談が豊富なので参考になります。</p>
+            </div>
+          </div>
 
-          <details class="faq__item">
-            <summary>Q. 参加したら何をすればいい？</summary>
-            <p>まずは自己紹介。質問や雑談から始めてOKです。</p>
-          </details>
+          <div class="faq-item">
+            <button class="faq-question">
+              参加したら何をすればいい？
+              <span class="faq-icon">＋</span>
+            </button>
+            <div class="faq-answer">
+              <p>まずは自己紹介。質問や雑談から始めてOKです。</p>
+            </div>
+          </div>
 
-          <details class="faq__item">
-            <summary>Q. 解約は簡単？</summary>
-            <p>いつでも可能です。縛りはありません。</p>
-          </details>
+          <div class="faq-item">
+            <button class="faq-question">
+              解約は簡単？
+              <span class="faq-icon">＋</span>
+            </button>
+            <div class="faq-answer">
+              <p>いつでも可能です。縛りはありません。</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
 
     <!-- Final CTA -->
     <section class="final" aria-labelledby="finalTitle">
       <div class="wrap final__inner">
         <div>
-          <p class="eyebrow">🟣 最後のCTA</p>
+          <!-- <p class="eyebrow">🟣 最後のCTA</p> -->
           <h2 id="finalTitle">母になっても、旅を楽しんでいい。</h2>
           <p class="lead">その一歩を、一緒に。</p>
         </div>
@@ -373,3 +393,28 @@
   </script>
 </body>
 </html>
+
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector(".faq-answer");
+      const icon = btn.querySelector(".faq-icon");
+
+      const isOpen = item.classList.contains("active");
+
+      document.querySelectorAll(".faq-item").forEach(i => {
+        i.classList.remove("active");
+        i.querySelector(".faq-answer").style.maxHeight = null;
+        i.querySelector(".faq-icon").textContent = "＋";
+      });
+
+      if (!isOpen) {
+        item.classList.add("active");
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.textContent = "－";
+      }
+    });
+  });
+</script>
