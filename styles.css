@@ -153,8 +153,8 @@ a:hover{ text-decoration:underline; }
 
 .btn--primary{
   color:#fff;
-  border-color: rgba(123,97,255,.35);
-  background: linear-gradient(135deg, rgba(123,97,255,.96), rgba(255,180,138,.86));
+  background:#f97316;   /* オレンジ */
+  border: none;
 }
 .btn--ghost{ background: rgba(255,255,255,.40); }
 .btn--full{ width:100%; }
@@ -205,9 +205,9 @@ p{ margin:0 0 12px; }
   position:absolute;
   inset:0;
   background:
-    linear-gradient(180deg, rgba(255,253,249,.55), rgba(255,253,249,1)),
-    linear-gradient(90deg, rgba(0,0,0,.35), rgba(0,0,0,.05)),
-    url("images/hero_01.png");
+    linear-gradient(180deg, rgba(255,253,249,.3), rgba(255,253,249,.6)),
+    linear-gradient(90deg, rgba(0,0,0,.2), rgba(0,0,0,.05)),
+    url("images/hero_01.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -269,7 +269,11 @@ p{ margin:0 0 12px; }
   box-shadow: 0 12px 30px rgba(31,41,55,.06);
 }
 .box--tint{
-  background: linear-gradient(135deg, rgba(123,97,255,.10), rgba(255,180,138,.12));
+  background: linear-gradient(
+    135deg,
+    rgba(249,115,22,.08),
+    rgba(249,115,22,.14)
+  );
 }
 
 .quote{ margin:0 0 10px; font-size: 1.2rem; }
@@ -299,13 +303,16 @@ p{ margin:0 0 12px; }
   box-shadow: 0 12px 30px rgba(31,41,55,.06);
 }
 .feature__num{
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 14px;
-  display:grid; place-items:center;
+  display: grid;
+  place-items: center;
   font-weight: 950;
-  color: var(--p);
-  background: rgba(123,97,255,.12);
-  border: 1px solid rgba(123,97,255,.18);
+
+  color: #f97316; /* ボタンと同色 */
+  background: rgba(249,115,22,.12);
+  border: 1px solid rgba(249,115,22,.25);
 }
 .feature__body p{ margin:0; color: var(--muted); }
 
@@ -433,8 +440,8 @@ p{ margin:0 0 12px; }
 .final{
   padding: 72px 0;
   background:
-    radial-gradient(900px 420px at 20% 25%, rgba(123,97,255,.16), transparent 60%),
-    radial-gradient(900px 420px at 85% 30%, rgba(255,180,138,.20), transparent 60%),
+    radial-gradient(900px 420px at 20% 25%, rgba(249,115,22,.12), transparent 60%),
+    radial-gradient(900px 420px at 85% 30%, rgba(249,115,22,.18), transparent 60%),
     rgba(255,253,249,.92);
   border-top: 1px solid var(--line);
 }
