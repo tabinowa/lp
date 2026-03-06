@@ -490,6 +490,7 @@ p{ margin:0 0 12px; }
   border-radius: 16px;
   padding: 16px 16px;
   position: relative;
+  margin: 0;
 }
 .letter:before{
   content:"";
